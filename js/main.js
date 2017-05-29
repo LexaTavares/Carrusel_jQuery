@@ -1,0 +1,46 @@
+$(document).ready(function(){
+  $("#1").click(function(){
+    $("#clamp").css("display","block");
+    $("#tsubasa").css("display","none");
+    $("#sakura").css("display","none");
+    $("#holic").css("display","none");
+    $("#chobits").css("display","none");
+  })
+  $("#2").click(function(){
+    $("#tsubasa").css("display","block");
+    $("#clamp").css("display","none");
+    $("#sakura").css("display","none");
+    $("#holic").css("display","none");
+    $("#chobits").css("display","none");
+  })
+  $("#3").click(function(){
+    $("#sakura").css("display","block");
+    $("#tsubasa").css("display","none");
+    $("#clamp").css("display","none");
+    $("#holic").css("display","none");
+    $("#chobits").css("display","none");
+  })
+  $("#4").click(function(){
+    $("#holic").css("display","block");
+    $("#sakura").css("display","none");
+    $("#tsubasa").css("display","none");
+    $("#clamp").css("display","none");
+    $("#chobits").css("display","none");
+  })
+  $("#5").click(function(){
+    $("#chobits").css("display","block");
+    $("#holic").css("display","none");
+    $("#sakura").css("display","none");
+    $("#tsubasa").css("display","none");
+    $("#clamp").css("display","none");
+  })
+})
+$(function(){
+  $("#izquierdo .deslizar").click(function(){
+    var item=$(this);
+    item.parent().parent().fadeOut(400,function(){
+      item.parent().parent().next(".deslizar").fadeIn(300);
+    })
+  })
+
+})

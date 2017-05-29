@@ -1,0 +1,29 @@
+.principal{
+  height: 350px;
+  background-color: black;
+}
+.container{
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.lista{
+  list-style: none;
+  display: none;
+}
+.container-button{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+.container-button>input{
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 50%;
+  background: lightblue;
+}
